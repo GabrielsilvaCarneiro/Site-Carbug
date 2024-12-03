@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbug.Com.br</title>
+    <link rel="stylesheet" href="inicial.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../imgs/logo-branca.png" alt="CarBug Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Aplicativo</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="hero-background">
+        <div class="header-content">
+            <h1>Quem Nós Somos? <br> Como A Carbug Trabalha</h1>
+            <p>O objetivo do aplicativo Carbug é, assim como a empresa, democratizar o conhecimento automotivo,
+                empoderando seus usuários a cuidar melhor dos seus veículos e a se conectar com outras pessoas que
+                compartilham da mesma paixão por carros.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn android-btn">Baixar App Android</a>
+                <a href="#" class="btn ios-btn">Baixar App IOS</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="../imgs/carro-sobrenos.png" alt="Car Image">
+            </div>
+            <div class="about-content">
+                <div class="about-title">
+                    <span class="about-icon">🔶</span>
+                    <span>Sobre Nós</span>
+                </div>
+                <h2>Quem Somos</h2>
+                <p>A Carbug é uma empresa focada na instrução, realização de atividades e manutenções corretivas ou
+                    preventivas que por sua vez grande parte é apenas um ajuste ou a maior atenção para com o veículo e
+                    suas condições gerais. Prezamos o serviço e uma instrução de alta qualidade para você e o seu
+                    veículo.</p>
+                <div class="about-buttons">
+                    <button onclick="changeText('quemSomos')" class="active">Quem Somos</button>
+                    <button onclick="changeText('servicos')">Serviços</button>
+                    <button onclick="changeText('nossoTime')">Nosso Time</button>
+                </div>
+                <div class="text-wrapper">
+                    <p class="secondary-text" id="dynamicText">Inspirados por essa necessidade, decidimos criar a Carbug, uma empresa que
+                        uniria serviços de manutenção automotiva com a missão de educar e distribuir conhecimento técnico. A
+                        ideia era simples: além de prestar serviços de alta qualidade, eles também criariam conteúdo
+                        educativo para que outros pudessem aprender.</p>
+                    <p class="more-text" id="moreText" style="display: none;">Esse texto extra oferece uma visão mais profunda sobre como a Carbug foi construída com a missão de fornecer conhecimento técnico. Nossa equipe está sempre buscando novas formas de agregar valor e conhecimento aos nossos clientes.</p>
+                </div>
+                <button class="btn-more" onclick="toggleMoreText()">Ver Mais</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Seção para Baixar o App -->
+    <div class="car-care-section">
+        <div class="text-content">
+            <div class="cta">
+                <img src="../icons/caixa.png" alt="Icon Box" class="icon-box">
+                <span>Faça Você Mesmo!</span>
+            </div>
+            <h1>Temos Suporte A Maioria Dos Carros Nacional</h1>
+            <h2 class="sub-title">Baixar App</h2>
+                <br>
+                <img src="../icons/seta.png" alt="" class="seta">
+        </div>
+        <!-- Imagem única à direita -->
+        <div class="image-cont">
+            <img src="../imgs/imagem-figma.png" alt="Tela do App">
+            <img src="../imgs/imagem-figma1.png" alt="Tela do App">
+        </div>
+    </div>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-left">
+                <img src="../imgs/Large Photo.png" alt="Carro" class="car-img">
+                <img src="../imgs/Small Photo.png" alt="Motor" class="motor-img">
+            </div>
+            <div class="faq-right">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-item active">
+                    <h3>Como Olhar o nível do Óleo do Motor <span class="toggle-icon">-</span></h3>
+                    <p>Normalmente localizado por um ícone de "anel". É uma peça de formato circular, feita de plástico
+                        e contendo as cores amarelo ou preto.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Como identificar o Nível do Óleo do motor? <span class="toggle-icon">+</span></h3>
+                    <p>Você pode identificar o nível do óleo utilizando a vareta de medição localizada no motor.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Qual é o óleo que eu devo colocar no meu carro? <span class="toggle-icon">+</span></h3>
+                    <p>Verifique no manual do proprietário ou pergunte a um especialista qual óleo é adequado para o seu
+                        carro.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>O que significa a luz de óleo acesa no painel? <span class="toggle-icon">+</span></h3>
+                    <p>A luz indica que o nível de óleo está baixo ou que há algum problema no sistema de lubrificação
+                        do motor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <div class="brands-title">
+        <span class="line"></span>
+        <p>Todas as Marcas do Mercado</p>
+        <span class="line"></span>
+    </div>
+
+    <div class="faq-footer">
+        <div class="brands-slider">
+            <div class="brands">
+                <img src="../imgs/Hyundai.png" alt="Hyundai">
+                <img src="../imgs/Honda.png" alt="Honda">
+                <img src="../imgs/Jaguar.png" alt="Jaguar">
+                <img src="../imgs/Mitsubishi.png" alt="Mitsubishi">
+                <img src="../imgs/Mercedes Benz.png" alt="Mercedes-Benz">
+                <img src="../imgs/Nissan.png" alt="Nissan">
+                <img src="../imgs/Lamborghini.png" alt="Lamborghini">
+                <img src="../imgs/Peugeot.png" alt="Peugeot">
+                <img src="../imgs/Mazda.png" alt="Mazda">
+                <img src="../imgs/Hyundai.png" alt="Hyundai">
+                <img src="../imgs/Honda.png" alt="Honda">
+                <img src="../imgs/Jaguar.png" alt="Jaguar">
+                <img src="../imgs/Mitsubishi.png" alt="Mitsubishi">
+                <img src="../imgs/Mercedes Benz.png" alt="Mercedes-Benz">
+                <img src="../imgs/Nissan.png" alt="Nissan">
+                <img src="../imgs/Lamborghini.png" alt="Lamborghini">
+                <img src="../imgs/Peugeot.png" alt="Peugeot">
+                <img src="../imgs/Mazda.png" alt="Mazda">
+                <img src="../imgs/Hyundai.png" alt="Hyundai">
+                <img src="../imgs/Honda.png" alt="Honda">
+                <img src="../imgs/Jaguar.png" alt="Jaguar">
+                <img src="../imgs/Mitsubishi.png" alt="Mitsubishi">
+                <img src="../imgs/Mercedes Benz.png" alt="Mercedes-Benz">
+                <img src="../imgs/Nissan.png" alt="Nissan">
+                <img src="../imgs/Lamborghini.png" alt="Lamborghini">
+                <img src="../imgs/Peugeot.png" alt="Peugeot">
+                <img src="../imgs/Mazda.png" alt="Mazda">
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+
+    <footer style="background-color: #1B1B1B; padding: 50px 0; color: white;">
+        <div class="container"
+            style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <!-- Seção de Informações da Empresa -->
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="../imgs/logo-branca.png" alt="Carbug" style="width: 60px;">
+                </div>
+                <p style="max-width: 300px; font-size: 14px; line-height: 1.5;">
+                    Nossa atuação abrange os setores informativo e automobilístico, além de instrução, construção e
+                    autoajuda na remontagem e montagem de peças, bem como manutenções simples e complexas. Estamos no
+                    mercado há 5 anos, com uma atividade que continua a crescer e se desenvolver por meio da concepção e
+                    implementação de diversos projetos.
+                </p>
+                <div class="social-icons" style="margin-top: 20px;">
+                    <a href="#"><img src="../imgs/Instagram.png" alt="Facebook"
+                            style="width: 30px; margin-right: 10px;"></a>
+                    <a href="#"><img src="../imgs/Telegram.png" alt="Instagram"
+                            style="width: 30px; margin-right: 10px;"></a>
+                    <a href="#"><img src="../imgs/WhatsApp.png" alt="WhatsApp"
+                            style="width: 30px; margin-right: 10px;"></a>
+                    <a href="#"><img src="../imgs/FaceBook.png" alt="Telegram"
+                            style="width: 30px; margin-right: 10px;"></a>
+                    <a href="#"><img src="../imgs/X ( Twiiter ).png" alt="X" style="width: 30px;"></a>
+                </div>
+            </div>
+
+            <!-- Seção de Categorias -->
+            <div class="footer-section">
+                <h3 style="font-size: 18px; margin-bottom: 20px;">Categorias</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Cuide
+                            do Seu Carro</a></li>
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Motores
+                            a Diesel</a></li>
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Câmbio</a>
+                    </li>
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Motocicletas</a>
+                    </li>
+                    <li><a href="#" style="color: white; text-decoration: none; font-size: 14px;">Mais...</a></li>
+                </ul>
+            </div>
+
+            <!-- Seção de Links do Usuário -->
+            <div class="footer-section">
+                <h3 style="font-size: 18px; margin-bottom: 20px;">Links do Usuário</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Home</a>
+                    </li>
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Faça
+                            Você Mesmo</a></li>
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Serviços
+                            e Imagens</a></li>
+                    <li><a href="#"
+                            style="color: white; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block;">Contato
+                            e Suporte</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none; font-size: 14px;">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+            <!-- Seção de Endereços -->
+            <div class="footer-section">
+                <h3 style="font-size: 18px; margin-bottom: 20px;">Nossos Endereços</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="color: white; font-size: 14px; margin-bottom: 10px;">
+                        <strong>Carbug São Paulo</strong><br>
+                        Churchill Executive Tower, Business Bay, Dubai, UAE<br>
+                        P.O.Box: 28824 Dubai, UAE
+                    </li>
+                    <li style="color: white; font-size: 14px; margin-bottom: 10px;">
+                        <strong>Bahia</strong><br>
+                        University Neighborhood, Civan Alley, No:1, Allure Tower, Unit:334 Avcılar/Istanbul
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; border-top: 1px solid #333; padding-top: 20px;">
+            <p style="font-size: 12px; color: #999;">© 2024 | All Rights Reserved | CARBUG/SESI-SENAI/Ferraz de
+                Vasconcelos | Made by Bruno Campioni de Oliveira</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item h3');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const faqItem = item.parentElement;
+                const p = item.nextElementSibling;
+
+                // Alterna entre adicionar e remover a classe "active"
+                faqItem.classList.toggle('active');
+
+                // Troca o ícone de "+" para "-"
+                const icon = item.querySelector('.toggle-icon');
+                if (faqItem.classList.contains('active')) {
+                    icon.textContent = '-';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
+        });
+
+
+
+        // Mostrar o botão ao rolar a página
+        window.onscroll = function () {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.classList.add("show");
+            } else {
+                scrollToTopBtn.classList.remove("show");
+            }
+        };
+
+        // Função para rolar suavemente ao topo
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+
+
+        // Função para trocar o texto ao clicar nos botões
+        function changeText(section) {
+            const dynamicText = document.getElementById("dynamicText");
+            const buttons = document.querySelectorAll(".about-buttons button");
+
+            // Remove a classe ativa de todos os botões e adiciona ao botão clicado
+            buttons.forEach(button => button.classList.remove("active"));
+            event.target.classList.add("active");
+
+            // Alterar o texto conforme o botão selecionado
+            if (section === 'quemSomos') {
+                dynamicText.innerHTML = "Inspirados por essa necessidade, decidimos criar a Carbug, uma empresa que uniria serviços de manutenção automotiva com a missão de educar e distribuir conhecimento técnico. A ideia era simples: além de prestar serviços de alta qualidade, também criamos conteúdo educativo.";
+            } else if (section === 'servicos') {
+                dynamicText.innerHTML = "Oferecemos uma ampla gama de serviços que incluem revisões completas, reparos rápidos, e manutenção preventiva. Nosso objetivo é garantir que seu veículo esteja sempre nas melhores condições para a estrada.";
+            } else if (section === 'nossoTime') {
+                dynamicText.innerHTML = "Nosso time é composto por especialistas apaixonados por automóveis e altamente capacitados. Trabalhamos juntos para oferecer o melhor suporte e garantir que cada cliente saia com conhecimento e confiança sobre o estado de seu veículo.";
+            }
+        }
+
+        function toggleMoreText() {
+            const moreText = document.getElementById("moreText");
+            const btnMore = document.querySelector(".btn-more");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                btnMore.textContent = "Ver Menos";
+            } else {
+                moreText.style.display = "none";
+                btnMore.textContent = "Ver Mais";
+            }
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
