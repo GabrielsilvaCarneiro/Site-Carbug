@@ -17,18 +17,18 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Aplicativo</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#aplicativo">Aplicativo</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
 
-    <div class="hero-background">
+    <div id="home" class="hero-background">
         <div class="header-content">
             <h1>Quem Nós Somos? <br> Como A Carbug Trabalha</h1>
             <p>O objetivo do aplicativo Carbug é, assim como a empresa, democratizar o conhecimento automotivo,
@@ -42,11 +42,11 @@
     </div>
 
     <section class="about-section">
-        <div class="about-container">
+        <div id="sobre-nos" class="about-container">
             <div class="about-image">
                 <img src="../imgs/carro-sobrenos.png" alt="Car Image">
             </div>
-            <div class="about-content">
+            <div id="servicos" class="about-content">
                 <div class="about-title">
                     <span class="about-icon">🔶</span>
                     <span>Sobre Nós</span>
@@ -62,20 +62,25 @@
                     <button onclick="changeText('nossoTime')">Nosso Time</button>
                 </div>
                 <div class="text-wrapper">
-                    <p class="secondary-text" id="dynamicText">Inspirados por essa necessidade, decidimos criar a Carbug, uma empresa que
-                        uniria serviços de manutenção automotiva com a missão de educar e distribuir conhecimento técnico. A
+                    <p class="secondary-text" id="dynamicText">Inspirados por essa necessidade, decidimos criar a
+                        Carbug, uma empresa que
+                        uniria serviços de manutenção automotiva com a missão de educar e distribuir conhecimento
+                        técnico. A
                         ideia era simples: além de prestar serviços de alta qualidade, eles também criariam conteúdo
                         educativo para que outros pudessem aprender.</p>
-                    <p class="more-text" id="moreText" style="display: none;">Esse texto extra oferece uma visão mais profunda sobre como a Carbug foi construída com a missão de fornecer conhecimento técnico. Nossa equipe está sempre buscando novas formas de agregar valor e conhecimento aos nossos clientes.</p>
+                    <p class="more-text" id="moreText" style="display: none;">Esse texto extra oferece uma visão mais
+                        profunda sobre como a Carbug foi construída com a missão de fornecer conhecimento técnico. Nossa
+                        equipe está sempre buscando novas formas de agregar valor e conhecimento aos nossos clientes.
+                    </p>
                 </div>
                 <button class="btn-more" onclick="toggleMoreText()">Ver Mais</button>
             </div>
         </div>
     </section>
-    
+
 
     <!-- Seção para Baixar o App -->
-    <div class="car-care-section">
+    <div id="aplicativo" class="car-care-section">
         <div class="text-content">
             <div class="cta">
                 <img src="../icons/caixa.png" alt="Icon Box" class="icon-box">
@@ -83,8 +88,8 @@
             </div>
             <h1>Temos Suporte A Maioria Dos Carros Nacional</h1>
             <h2 class="sub-title">Baixar App</h2>
-                <br>
-                <img src="../icons/seta.png" alt="" class="seta">
+            <br>
+            <img src="../icons/seta.png" alt="" class="seta">
         </div>
         <!-- Imagem única à direita -->
         <div class="image-cont">
@@ -235,7 +240,7 @@
             </div>
 
             <!-- Seção de Endereços -->
-            <div class="footer-section">
+            <div id="contato" class="footer-section">
                 <h3 style="font-size: 18px; margin-bottom: 20px;">Nossos Endereços</h3>
                 <ul style="list-style: none; padding: 0;">
                     <li style="color: white; font-size: 14px; margin-bottom: 10px;">
@@ -279,6 +284,24 @@
             });
         });
 
+        // Seleciona todos os links do menu de navegação
+document.querySelectorAll('nav ul.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita o comportamento padrão do link
+
+        // Obtém o destino do link pelo ID do atributo href
+        const targetId = this.getAttribute('href').slice(1); // Remove o "#" do href
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            // Faz a rolagem suave para o elemento alvo
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
 
 
         // Mostrar o botão ao rolar a página

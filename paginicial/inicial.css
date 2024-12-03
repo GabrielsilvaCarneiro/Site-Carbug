@@ -93,6 +93,7 @@ nav {
     justify-content: end;
     padding-right: 50px;
     gap: 30px;
+    scroll-behavior: smooth;
 }
 
 .nav-links li {
